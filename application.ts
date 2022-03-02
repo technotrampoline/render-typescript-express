@@ -6,10 +6,14 @@ const port = 3000;
 
 application
   .get("/", (req, res) => {
-    res.send("Hello, World!");
+    res.send({
+      message: "Hello, World!",
+    });
   })
   .get("/random", (req, res) => {
-    res.send(Math.floor(Math.random() * 100));
+    res.send({
+      number: Math.floor(Math.random() * 100),
+    });
   });
 
 application.listen(port, () => {
