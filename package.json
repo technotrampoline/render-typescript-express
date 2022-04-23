@@ -2,7 +2,7 @@
   "name": "render-typescript-express",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node application.ts",
+    "dev": "ts-node ./src/application.ts",
     "format": "prettier --write . --ignore-path .gitignore",
     "start": "node ./dist/application.js"
   },
